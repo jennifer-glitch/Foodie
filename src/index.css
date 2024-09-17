@@ -1,0 +1,220 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+  *{
+    padding: 0;
+    margin: 0;
+  }
+  .itemslist1 img{
+    width: 7.5vw;
+    min-width: 80px;
+    border-radius: 50%;
+    transition: 0.2s;
+  }
+  .itemslist{
+   margin: 10px 10px  0px;
+   margin-right: 10px;
+   /* overflow: hidden; */
+  }
+  .itemslist2 #active{
+/* display: none; */
+border: 3px solid rgb(163, 9, 9);
+padding: 2px;
+  }
+   #head{
+    background-image: url(/images/foodie6s.jpg);
+    height: 55vw;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 24px 30px;
+    margin-top: 10%;
+   }
+   @keyframes fadeIn{
+    0%{
+      opacity: 0 ;
+    }
+    100%{
+      opacity: 1;
+    }
+  }
+  #img1 #active{
+    border: 4px solid rgb(163, 9, 9);
+    padding: 2px;
+  }
+  .grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    margin-top: 30px;
+    gap: 20px;
+    row-gap: 50px;
+    margin-left: 20px;
+  }
+  #fooditem{
+    border-radius: 15px;
+    transition: 0.3s;
+    animation: fadeIn 1s;
+    box-shadow: 0px 0px 10px #00000015;
+    width: 100%;
+    /* margin:; */
+  }
+  #form{
+    width: 100%;
+    height: 100%;
+    background-color: #00000090;
+    margin-top: 0;
+    
+  }
+  form{
+    place-self: center;
+    margin-left: 70vw;
+    width: max(23vw, 330px);
+    color: #808080;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 25px 30px;
+    justify-content: center;
+    border-radius: 8px;
+    font-size: 14px;
+    animation: fadeIn 0.5s;
+  }
+  #image{
+    border-radius: 15px 15px 0px 0px;
+    width: 22rem;
+    height: 12rem;
+  }
+  /* .fooditem{
+    position: relative;
+  }
+  .fooditem #image{
+     position: absolute; 
+     bottom: 5px; 
+     right: 5px; 
+    
+  } */
+  #fooster{
+    background-color: #343434;
+  }
+  #fooster hr{
+    width: 100%;
+    height: 3px;
+    border: none;
+    margin: 20px 0px;
+    background-color:white;
+  }
+   @media (max-width:1050px) {
+    #head{
+      /* height: 55vw; */
+      margin-top: 30vw;
+    }
+    #headcon{
+      max-width: 45%;
+    }
+    /* #headcon h2{
+      width: 2vw;
+      margin-top: 20%;
+      font-size: 32px;
+      
+    } */
+   }
+   @media (max-width:750px) {
+    #headcon{
+      max-width: 65%;
+      display: flex;
+    }
+    #headcon h2{
+      width: 3vw;
+      margin-top: 20%;
+      font-size: 4vw;
+      
+    }
+    #headcon p{
+      display: none;
+    }
+    #headcon button{
+      padding: 2vw 4vw;
+      font-size: 17px;
+      display: flex;
+    } 
+    #headcon{
+      padding: 3vw;
+      width: 23vw;
+      margin: 12vw;
+    }
+    
+   }
+   #headcon{
+    max-width: 50%;
+   }
+   #cart{
+    grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr 0.5fr;
+    font-size: max(1vw, 12px);
+    
+  }
+  .cartitems{
+    /* margin: 10px 100px; */
+  }
+  .hr{
+    height: 0.5px;
+    background-color: #343434;
+    border: none;
+    /* margin: 2px 0px; */
+  }
+  /* .mt{
+    background: linear-gradient(to right, blue, purple, pink);
+    margin-top: 4rem;
+    color: #fff;
+  } */
+
+  .cartbottom{
+    gap: max(12vw, 20px);
+  }
+.carttotal{
+  flex: 1;
+  display: flex; 
+  margin-left: 5%;
+}
+.cartdetails{
+  color: #555;
+}
+.hr1{
+  margin: 2px 0px;
+}
+.button{
+  width: max(15vw,200px);
+  padding: 12px 0px;
+  border-radius: 4px;
+  background-color: tomato;
+}
+.code{
+  color: #555;
+  margin-right: 5%;
+}
+.input{
+  background-color: #eaeaea;
+  border-radius: 4px;
+}
+.input input{
+  background: transparent;
+  outline: none;
+  padding-left: 10px;
+}
+.input button{
+  width: max(10vw, 150px);
+  padding: 12px 5px;
+  background-color: black;
+  color: white;
+  border-radius: 4px;
+}
+  @media (max-width:750px) {
+    .cartbottom{
+      flex-direction: column-reverse;
+    }
+    .code{
+      justify-content: start;
+    }
+  }
+}

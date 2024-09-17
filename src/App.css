@@ -1,0 +1,199 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Domine:wght@400..700&family=Playwrite+NG+Modern:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Playwrite+NG+Modern:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+}
+.header{
+  display: flex;
+  justify-content: space-around;
+  padding-top: 1%;
+  position: fixed;
+  top: -20px;
+  left: 0;
+  right: 0;
+  box-shadow: 0.5px 1px rgba(0, 0, 0, 1);
+  backdrop-filter:blur(10px) ;
+  height: 90px;
+}
+.nav{
+  height: 20px;
+  background: transparent;
+  display: flex;
+  margin-top: 1%;
+}
+nav h1{
+color: tomato;
+font-size: 30px;
+padding-top: 5%;
+}
+nav span{
+  font-size: 30px;
+  color: tomato;
+  font-weight: 700;
+}
+.nav img{
+  background: transparent;
+  height: 6rem;
+  padding: -1%;
+
+}
+.nav2{
+display: flex;
+align-items: center;
+list-style: none;
+gap: 50px;
+font-size: 20px;
+font-weight: 500;
+}
+.nav2 li{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+  transition: 0.3s ease;
+}
+.nav2 li:hover{
+border-bottom: 3px solid orangered;
+}
+.navlogin{
+  display: flex;
+  align-items: center;
+  gap: 6em;
+  width: 20%;
+  margin-top: -1%;
+  padding: -1%;
+}
+.btn button{
+  width: 230%;
+  height: 40px;
+  border-radius: 3px;
+  border: none;
+  color: white;
+  background-color: orangered;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.search-icon{
+  position: relative;
+}
+ .search-icon .dot{
+  position: absolute;
+  min-width: 10px;
+  min-height: 10px;
+  background: tomato;
+  border-radius: 5px;
+  top: -7px;
+  right: -1px;
+}
+.navlogin h1{
+padding-top: 2%;
+font-size: 30px;
+}
+.head{
+  height: 40vw;
+  margin: 24px 30px;
+  background: url(/public/images/foodie4s.png);
+  border-radius: 30px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 8%;
+}
+.head-content{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1.5vw;
+  max-width: 50%;
+  bottom: 25%;
+  left: 6vw;
+  margin-left: 5%;
+  padding-top: 8%;
+  animation: fadeIn 3s;
+}
+.head-content h2{
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight:700;
+  font-style: normal;
+  color: #fff;
+  font-size: max(4.5vw, 30px);
+}
+.head-content p{
+  font-family: "Domine", serif;
+  font-optical-sizing: auto;
+  color: #fff;
+  font-weight:300;
+  font-style: normal;
+  font-size: 1em;
+}
+.head-content button{
+  border: none;
+  font-weight: 500;
+  color: #000;
+  cursor: pointer;
+  background-color: white;
+  padding: 1vw 2.3vw;
+  font-size: max(1vw 30px);
+  border-radius: 50px;
+  transition: 0.3s ease;
+}
+.head-content button:hover{
+  background-color: black;
+color: #fff;
+}
+@keyframes fadeIn{
+  0%{
+    opacity: 0 ;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+.menu{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.menu-text{
+  color: #262626;
+  font-weight: 500;
+}
+.menu p{
+max-width: 60%;
+color: #262626;
+}
+.menu-list{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  text-align: center;
+  margin: 15px 130px;
+  overflow-x: scroll;
+}
+.menu-list::-webkit-scrollbar{
+display: none;
+}
+.font-semibold1{
+  font-size: 70px;
+  font-weight: 600;
+  margin-top: 10%;
+  color: #102135;
+}
+.bg{
+  margin:15px 20px;
+  border-radius: 15px;
+}
+#img1 #active{
+  border: 4px solid tomato;
+  padding: 2px;
+}
+#img1{
+  cursor: pointer;
+} */
